@@ -17,6 +17,3 @@ ALPHA = dict({
     ('T', 'G'): 110
 })
 DELTA = 30
-
-INPUT_FILE_ADDRESS = 'BaseTestcases_CS570FinalProject_Updated/input2.txt'
-OUTPUT_FILE_ADDRESS = 'output.txt'

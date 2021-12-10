@@ -1,0 +1,1 @@
+/usr/bin/time -f '%U' -p python3 4082809473_1605039563_6426152619_efficient.py input.txt output.txt
