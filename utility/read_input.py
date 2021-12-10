@@ -1,7 +1,6 @@
 def read_input_file(input_file_address) -> dict:
     """
     Takes a string as input file address and returns the base strings along indices for each base string
-    Written by: Parsa
     """
     res = dict()
     res['first_base_string'] = ''

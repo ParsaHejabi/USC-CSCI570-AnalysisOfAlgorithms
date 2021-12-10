@@ -26,9 +26,6 @@ def efficient_algorithm(first_gene: str, second_gene: str):
 
 
 def bottom_up_with_two_column(first_gene: str, second_gene: str):
-    """
-    O(len(first_gene) x len(second_gene))
-    """
     column_1 = np.empty((len(first_gene) + 1, 1))
     column_2 = np.empty((len(first_gene) + 1, 1))
     for i in range(len(first_gene) + 1):
@@ -43,5 +40,7 @@ def bottom_up_with_two_column(first_gene: str, second_gene: str):
             skip_first_gene = column_2[i - 1, 0] + DELTA
             skip_second_gene = column_1[i, 0] + DELTA
             column_2[i, 0] = min(mismatch, skip_first_gene, skip_second_gene)
-        column_1 = column_2.copy()
+
+        for i in range(len(first_gene) + 1):
+            column_1[i, 0] = column_2[i, 0]
     return column_2

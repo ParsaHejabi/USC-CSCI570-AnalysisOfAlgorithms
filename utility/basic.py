@@ -19,7 +19,7 @@ def basic_bottom_up(first_gene: str, second_gene: str):
             first_gene_char = first_gene[i - 1]
             second_gene_char = second_gene[j - 1]
             mismatch = opt_matrix[i - 1, j - 1] + \
-                ALPHA[(first_gene_char, second_gene_char)]
+                       ALPHA[(first_gene_char, second_gene_char)]
             skip_first_gene = opt_matrix[i - 1, j] + DELTA
             skip_second_gene = opt_matrix[i, j - 1] + DELTA
             opt_matrix[i, j] = min(mismatch, skip_first_gene, skip_second_gene)
@@ -54,14 +54,14 @@ def basic_top_bottom(opt_matrix, first_gene, second_gene):
     if j == 0:
         second_matched_sequence = second_matched_sequence[::-1]
         second_matched_sequence = '_' * \
-            len(first_gene[0:i]) + second_matched_sequence
+                                  len(first_gene[0:i]) + second_matched_sequence
         first_matched_sequence = first_matched_sequence[::-1]
         first_matched_sequence = first_gene[0:i] + first_matched_sequence
 
     elif i == 0:
         first_matched_sequence = first_matched_sequence[::-1]
         first_matched_sequence = '_' * \
-            len(second_gene[:j]) + first_matched_sequence
+                                 len(second_gene[:j]) + first_matched_sequence
         second_matched_sequence = second_matched_sequence[::-1]
         second_matched_sequence = second_gene[0:j] + second_matched_sequence
 
