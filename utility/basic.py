@@ -30,7 +30,7 @@ def basic_bottom_up(first_gene: str, second_gene: str):
 def basic_top_bottom(opt_matrix, first_gene, second_gene):
     """
     opt_matrix[i, j] = optimal matched sequence from indexes 0 to i in the first gene 
-        and optimal matched seqeunce from indexes 0 to j in the second gene
+        and optimal matched sequence from indexes 0 to j in the second gene
     """
     i = len(first_gene)
     j = len(second_gene)

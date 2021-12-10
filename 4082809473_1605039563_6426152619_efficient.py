@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # print("first matched gene: ", first_matched_sequence)
     # print("second matched gene:", second_matched_sequence)
     # print("score = ", score)
-    assert len(first_matched_sequence) == len(second_matched_sequence)
+    # assert len(first_matched_sequence) == len(second_matched_sequence)
 
     # Make the output string
     output = f'{first_matched_sequence[:50]} {first_matched_sequence[-51:]}\n{second_matched_sequence[:50]} {second_matched_sequence[-51:]}\n{float(score)}\n'
