@@ -382,3 +382,5 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,jetbrains+all,python,visualstudiocode,pycharm+all
 output*.txt
+!outputs/output*.txt
+!outputs2/output*.txt

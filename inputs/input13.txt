@@ -1,0 +1,14 @@
+ATGCCGATG
+3
+5
+1
+2
+4
+5
+GCTGCAAGT
+3
+5
+1
+2
+4
+5
