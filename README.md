@@ -180,3 +180,67 @@ A.
   points.
 - Memory efficient version: 30 points.
 - Plots, analysis of results, insights and observations: 30 points.
+
+### Project Addendum
+
+1. The string generation mechanism is same irrespective of the basic or the efficient version of the algorithm
+
+2. You can write a utility string generation code and use that for generating your own test cases. These could be used to measure your programs time and memory performance.
+
+3. No input string is going to exceed 2^10 (1024 or 1.02 Kilo bytes).
+
+4. We are asking for first 50 and last 50 characters in each string in the sequence alignment to avoid comparing all the characters in the entire alignment, thereby reducing the computational cost.
+
+5. If there are many valid multiple sequences with the same cost, you can output any of those. All of them are valid.
+
+6. The length of the final string should be equal to the (2^(number of lines))\*length of base string, as mentioned in the document.
+
+7. Only 1 person in the group needs to submit. We’ll get the USC IDs of all the other team members from the filenames.
+
+8. We will never give an invalid input to your program
+
+9. Deltas and alphas are fixed parameters which need to be hardcoded.
+
+10. You should code both the basic version and memory efficient version. You cannot use the memory efficient version in both of the sub-problems.
+
+11. You can code the algorithm in any language and plot the analysis using a program in another other language
+
+12. Your solutions for the regular and memory-efficient algorithms be in two different programs and both the programs need to produce an output called `output.txt` and take `input.txt` file from command line?
+
+13. Memory in the program should be in Kilobytes and Time taken by the program should be in seconds. You can use linux utility command time to measure the time and `/usr/bin/time` (<https://unix.stackexchange.com/a/18851>) to measure the memory usage respectively. These are one of the many examples, you can use anything for measuring the performance. Memory taken by your program refers to the amount of RAM/ Resident set size used.
+
+14. You can use any python package to estimate time and memory for your program.
+
+15. First line in the output file contains the first 50 characters and last 50 characters of the first string. The first 50 and last 50 characters are separated by a space. The secone line contains the same, but for the second string.
+
+16. The memory plot and the time plot need to have just 2 line plots, one from the basic version and the other from the advanced version. You can estimate datapoints by generating multiple test cases by yourself. You need to generate valid pngs when you submit.
+
+17. Memory and time values in the output txt file are float values.
+
+18. We will have bounds on the runtime and memory of your program to account for different compiler and languages. But remember that these differences shouldn’t really affect your runtime and memory too much.
+
+19. You all need to hardcode the mismatch costs.
+
+20. Input strings will always contain A, C, G, T only.
+
+21. Please delete the input and output txt file given by us. We will be releasing a new version in the next 60 mins, containing the cost of the alignment as well in the 3rd line, followed by memory and time taken in the 4th and the 5th line respectively.
+
+22. Yes your code be tested on a series of input text files? You need to code your programs to take inputs from the user through the command line.
+
+23. Please don’t use any fancy plots for the graphs for time and memory. Just a line graph of about 15-20 data points should be sufficient.
+
+24. You can write your own string generator and give sample test cases to get more points in the plot. For each test case, you get one point on the plot
+
+25. Your program should not print anything when it is run. It should only write to output.txt file.
+
+26. X axis of the plot needs to be the problem size, which is m+n, i.e the sum of the lengths of the strings (not the length of the base strings but the length of the final strings).
+
+27. Please make sure you also have a shell script named `1234567890_1234567890_1234567890_basic.sh` and `1234567890_1234567890_1234567890_efficient.sh` consisting of commands to run your programs. Refer to @2638 for more details.
+
+28. Python users need to have 2.7 or 3 in their suffixes. Refer to @2638 for more details.
+
+29. Don't worry about the python packages. We'll install all of them. As for the flags for `C++/C/Java`, we've asked you to write a script, so it should take care of that.
+
+30. For the project report, just write these things:
+    - Contributions of each student in the group.
+    - Comments on why the efficient and basic versions have different memory and time plots.
